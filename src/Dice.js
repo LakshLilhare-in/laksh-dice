@@ -25,12 +25,23 @@ export default class Dice extends Component {
   render() {
     return (
       <>
-        <div className="d-flex text-center">
-          <Die face={this.state.die1} rolling={this.state.rolling}/>
-          <Die face={this.state.die2} rolling={this.state.rolling}/>
+          <p className="lead pt-3 text-center">Your Current Points is:{`${this.state.die1}   ${this.state.die2}`}</p>
+        <div className="d-flex ">
+          <div className="container">
+            <div className="row">
+                <div className="col col-sm-2 col-md-5 ">
+          <Die className="dice-2" face={this.state.die1} rolling={this.state.rolling}/>
+                </div>
+                <div className="col-sm-2 col-md-5">
+
+          <Die className="dice-1" face={this.state.die2} rolling={this.state.rolling}/>
+                </div>
+            </div>
+            
+          </div>
         </div>
 
-        <button className={`btn mycolor text-white centex ${this.props.rolling && 'disabled'}`} onClick={this.roll} disabled={this.state.rolling}>
+        <button className="mycolor text-white text-center cen" onClick={this.roll} disabled={this.state.rolling}>
          { this.state.rolling ? 'Rolling...' : 'Roll Dices!'}
         </button>
       </>

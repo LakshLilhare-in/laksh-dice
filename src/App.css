@@ -1,35 +1,41 @@
-
-.dice{
+.dice {
   color: #2fd38e;
   font-size: 18rem;
   padding-top: 5rem !important;
   padding-left: 9rem !important;
-
 }
 
-.mycolor{
+.mycolor {
   background-color: #2fd38e;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  margin-left:12rem;
 }
-.blo{
+.blo {
   display: block !important;
 }
 
-.centex{
+.centex {
   margin-left: 28rem;
   margin-top: 5rem;
 }
-.centex:hover{
+.centex:hover {
   transition: all ease-in 300ms;
- background-color: #0a9e60;
- padding-left: 10px;
- padding-right: 10px;
+  background-color: #0a9e60;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.dice:hover{
+.dice:hover {
   transition: all ease-in 300ms;
- color: #0a9e60;
+  color: #0a9e60;
+}
+.btn:hover {
+  transition: all ease-in 300ms;
+  color: #0a9e60;
 }
 
-.shaked{
+.shaked {
   animation-name: shake;
   animation-duration: 1s;
 }
@@ -61,4 +67,24 @@
   to {
     transform: translate3d(0, 0, 0);
   }
+}
+
+*{
+  text-transform: capitalize;
+}
+
+.cen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  background-color: rgb(27, 25, 25);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color :white;
+  text-align: center;
+  padding: 1rem;
 }
