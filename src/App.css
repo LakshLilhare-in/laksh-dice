@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+.dice {
+  color: #2fd38e;
+  font-size: 18rem;
+  padding-top: 5rem !important;
+  padding-left: 9rem !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mycolor {
+  background-color: #2fd38e;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  margin-left:12rem;
+}
+.blo {
+  display: block !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.centex {
+  margin-left: 28rem;
+  margin-top: 5rem;
+}
+.centex:hover {
+  transition: all ease-in 300ms;
+  background-color: #0a9e60;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.dice:hover {
+  transition: all ease-in 300ms;
+  color: #0a9e60;
+}
+.btn:hover {
+  transition: all ease-in 300ms;
+  color: #0a9e60;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.shaked {
+  animation-name: shake;
+  animation-duration: 1s;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes shake {
   from {
-    transform: rotate(0deg);
+    transform: translate3d(0, 0, 0);
   }
+
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
   to {
-    transform: rotate(360deg);
+    transform: translate3d(0, 0, 0);
   }
+}
+
+*{
+  text-transform: capitalize;
+}
+
+.cen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  background-color: rgb(27, 25, 25);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color :white;
+  text-align: center;
+  padding: 1rem;
 }
